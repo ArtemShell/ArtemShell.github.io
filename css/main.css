@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color:#ecedee
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #007bff;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+  background-color:#0069d9;
+  }
+  
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+  }
+  
+::-webkit-scrollbar{
+  width: 4px;
+}
+
+
+header {
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+header .logo {
+/* LOGO SETTING */
+  font-weight: 400;
+  font-size: 2.3rem;
+/* ============ */
+}
+header .logo a:hover {
+  text-decoration: none;
+}
+header .logo small {
+  font-size: 1.4rem;
+}
+header .logo small:first-child {
+  margin-right: 0.3rem;
+}
+header .logo small:last-child {
+  margin-left: 0.3rem;
+}
+header nav a {
+  margin-right: 0.6rem;
+}
+header nav a.badge {
+  font-weight: 400;
+  font-size: 1rem;
+}
+header nav a:last-child {
+  margin-right: 0;
+}
+header nav a:hover {
+  text-decoration: none;
+}
+header.black .logo a,
+header.black .logo a:hover,
+header.black nav a {
+  color: #000;
+}
+header.white .logo a,
+header.white .logo a:hover,
+header.white nav a {
+  color: #fff;
+}
+header nav a.badge {
+  color: #fff;
+}
+main section#start {
+  background-image: url("../image/start.png");
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+main section#start h1 {
+  padding-top: 38vh;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+}
+main section#start button {
+  margin-top: 1rem;
+}
+main section#start button a {
+  color: #fff;
+}
+main section#start button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+main section#portfolio {
+  height: 100vh;
+  width: 100%;
+}
+main section#portfolio .title {
+  text-align: center;
+  padding-top: 2rem;
+}
+main section#portfolio .title p {
+  color: #007bff;
+  font-style: italic;
+}
+main section#portfolio .works {
+  padding-top: 3rem;
+  padding-right: 0.5rem;
+}
+main section#portfolio .works .card {
+  overflow: hidden;
+}
+main section#portfolio .works .card img {
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+}
+main section#portfolio .works .card img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+main section#portfolio .works .row {
+  margin-right: 0;
+}
+main section#contact {
+  height: 100vh;
+  width: 100%;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  color: #fff;
+  background-color: #141414;
+}
+main section#contact .row {
+  margin-top: 5rem;
+}
+main section#contact h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+main section#contact p.name {
+  font-size: 2rem;
+}
+main section#contact p.phone {
+  font-size: 1rem;
+}
+main section#contact .copyright {
+  position: absolute;
+  bottom: -198vh;
+}
+main#portfolio_page h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 6rem;
+}
+main#portfolio_page .create_date {
+  margin-top: 1.7rem;
+  color: #818181;
+  padding-left: 8rem;
+}
+main#portfolio_page .create_date i {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main#portfolio_page .create_date p {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+main#portfolio_page .project_task {
+  padding-left: 8rem;
+}
