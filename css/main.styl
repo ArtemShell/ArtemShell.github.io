@@ -4,18 +4,27 @@
 fullScreen()
 	height 100vh
 	width 100%
+
 header
 	padding-top 2rem
 	padding-left 8rem
 	padding-right 8rem
 
-	.logo
-		/* LOGO SETTING */
-		font-weight 400 // Тольщина основного текста на лого
-		font-size 2.3rem // Размер основного текста на лого
+	width 100%
+	z-index 5
+	display flex
+	justify-content space-between
+	align-items center
+	position fixed
+	@media screen and (max-width: 620px)
+		flex-direction column
+		padding 0
+	//	display inline !important 
 
-		small_margin = .3rem // Отступы кавычек на лого
-		/* ============ */
+	.logo
+		font-weight 400
+		font-size 2.3rem
+		small_margin = .3rem
 		a:hover
 			text-decoration none
 		small
@@ -24,7 +33,6 @@ header
 				margin-right small_margin
 			&:last-child
 				margin-left small_margin
-
 	nav a
 		margin-right .6rem
 		&.badge
@@ -66,7 +74,7 @@ main section
 		fullScreen()
 		.title
 			text-align center
-			padding-top 2rem
+			padding-top 5rem
 			p
 				color #007bff
 				font-style italic
@@ -89,13 +97,14 @@ main section
 		fullScreen()
 		padding-left 8rem
 		padding-right 8rem
+
 		color white
 		background-color hsl(0deg 0% 8%)
 		.row
 			margin-top 5rem
 		h1
 			text-align center
-			padding-top 2rem
+			padding-top 5rem
 		p
 			&.name
 				font-size 2rem
@@ -104,8 +113,12 @@ main section
 		.copyright
 			position absolute
 			bottom -198vh
+		@media screen and (max-width: 620px)
+			padding-left 4rem
+			.row
+				margin-top 0
 
-main#portfolio_page
+/*main#portfolio_page
 	h1
 		text-align center
 		font-weight 400
@@ -122,3 +135,4 @@ main#portfolio_page
 			font-size .8rem
 	.project_task
 		padding-left 8rem
+*/

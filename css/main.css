@@ -2,51 +2,26 @@
 * {
   font-family: 'Rubik', sans-serif;
 }
-
-
-::-webkit-scrollbar-button {
-  background-image:url('');
-  background-repeat:no-repeat;
-  width:5px;
-  height:0px
-  }
-  
-  ::-webkit-scrollbar-track {
-  background-color:#ecedee
-  }
-  
-  ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  background-color: #007bff;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
-  background-color:#0069d9;
-  }
-  
-  ::-webkit-resizer{
-  background-image:url('');
-  background-repeat:no-repeat;
-  width:4px;
-  height:0px
-  }
-  
-::-webkit-scrollbar{
-  width: 4px;
-}
-
-
 header {
   padding-top: 2rem;
   padding-left: 8rem;
   padding-right: 8rem;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+@media screen and (max-width: 620px) {
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 header .logo {
-/* LOGO SETTING */
   font-weight: 400;
   font-size: 2.3rem;
-/* ============ */
 }
 header .logo a:hover {
   text-decoration: none;
@@ -114,7 +89,7 @@ main section#portfolio {
 }
 main section#portfolio .title {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 main section#portfolio .title p {
   color: #007bff;
@@ -153,7 +128,7 @@ main section#contact .row {
 }
 main section#contact h1 {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 main section#contact p.name {
   font-size: 2rem;
@@ -165,24 +140,29 @@ main section#contact .copyright {
   position: absolute;
   bottom: -198vh;
 }
-main#portfolio_page h1 {
-  text-align: center;
-  font-weight: 400;
-  margin-top: 6rem;
+@media screen and (max-width: 620px) {
+  main section#contact {
+    padding-left: 4rem;
+  }
+  main section#contact .row {
+    margin-top: 0;
+  }
 }
-main#portfolio_page .create_date {
-  margin-top: 1.7rem;
-  color: #818181;
-  padding-left: 8rem;
-}
-main#portfolio_page .create_date i {
-  font-size: 1rem;
-  font-weight: 400;
-}
-main#portfolio_page .create_date p {
-  font-style: italic;
-  font-size: 0.8rem;
-}
-main#portfolio_page .project_task {
-  padding-left: 8rem;
-}
+/*main#portfolio_page
+	h1
+		text-align center
+		font-weight 400
+		margin-top 6rem
+	.create_date
+		margin-top 1.7rem
+		color #818181
+		padding-left 8rem
+		i
+			font-size 1rem
+			font-weight 400
+		p
+			font-style italic
+			font-size .8rem
+	.project_task
+		padding-left 8rem
+*/
