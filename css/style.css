@@ -15,6 +15,7 @@ header {
 
 @media only screen and (max-width: 768px) {
   header {
+    width: 100%;
     position: absolute;
     padding: .5rem 0;
     -webkit-box-orient: vertical;
