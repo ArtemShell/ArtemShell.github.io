@@ -1,0 +1,24 @@
+#start
+	background-image: url('../image/start.png')
+	color: white
+	justify-content: center
+	
+	.intro
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		h1
+			font-size: 3rem
+			@include max-screen(768px)
+				font-size: 1.7rem
+		button
+			cursor: pointer
+			background: $button_color
+			
+			padding: .5rem 1rem
+			border: none
+			border-radius: 1rem
+			a
+				font-size: 1.2rem
+				color: white
