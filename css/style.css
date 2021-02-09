@@ -3,14 +3,14 @@ header {
   position: fixed;
   top: 0;
   color: white;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0;
+  padding: 2rem 5rem;
+  width: calc(100% - 10rem);
 }
 
 @media only screen and (max-width: 768px) {
@@ -80,7 +80,11 @@ header a.active {
   border-radius: 1rem;
   padding: .3rem .8rem;
   color: white;
-  background: blue;
+  background: #007bff;
+}
+
+header a:hover {
+  text-decoration: none;
 }
 
 #start {
@@ -119,7 +123,7 @@ header a.active {
 
 #start .intro button {
   cursor: pointer;
-  background: blue;
+  background: #007bff;
   padding: .5rem 1rem;
   border: none;
   border-radius: 1rem;
@@ -128,6 +132,10 @@ header a.active {
 #start .intro button a {
   font-size: 1.2rem;
   color: white;
+}
+
+#start .intro button a:hover {
+  text-decoration: none;
 }
 
 #portfolio {
@@ -152,11 +160,12 @@ header a.active {
 }
 
 #portfolio #title h1 {
+  font-size: 2.5rem;
   margin: 0;
 }
 
 #portfolio #title i {
-  color: blue;
+  color: #007bff;
 }
 
 #portfolio .works {
@@ -192,12 +201,62 @@ header a.active {
   }
 }
 
+#contacts {
+  background: #141414;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contacts_title {
+  margin-top: 6rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#contacts_list {
+  padding-left: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contacts_list h1 {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+#contacts_list a {
+  margin-bottom: 1.3rem;
+}
+
+#contacts_list a:last-child {
+  margin-bottom: 0;
+}
+
+#contacts .copyright {
+  position: absolute;
+  margin-left: 5rem;
+  bottom: -198vh;
+}
+
 * {
   font-family: 'Rubik', sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 section {
