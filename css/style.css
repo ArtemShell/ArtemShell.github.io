@@ -220,7 +220,7 @@ header a:hover {
 }
 
 #contacts_title {
-  margin-top: 6rem;
+  margin-top: 2.3rem;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -286,5 +286,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.fixed {
+  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */
